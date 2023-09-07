@@ -9,7 +9,7 @@ def main(page: ft.Page):
             ft.View(
                 "/",
                 [
-                    ft.AppBar(title=ft.Text("Face-line"), bgcolor=ft.colors.SURFACE_VARIANT),
+                    ft.AppBar(title=ft.Text("Face-Line"), bgcolor=ft.colors.SURFACE_VARIANT),
                     ft.ElevatedButton("Visit Store", on_click=lambda _: page.go("/store")),
                 ],
             )
