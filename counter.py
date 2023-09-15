@@ -9,7 +9,7 @@ def main(page: ft.Page):
             ft.View(
                 "/",
                 [
-                    ft.AppBar(title=ft.Text("Face-Line"), bgcolor=ft.colors.SURFACE_VARIANT),
+                    ft.AppBar(title=ft.Text("Face-Line"), bgcolor=ft.colors.BLUE_400),
                     ft.ElevatedButton("Visit Store", on_click=lambda _: page.go("/store")),
                 ],
             )
@@ -36,4 +36,4 @@ def main(page: ft.Page):
     page.go(page.route)
 
 
-ft.app(target=main, view=ft.AppView.WEB_BROWSER)
+ft.app(target=main, view=ft.AppView.FLET_APP_WEB)
